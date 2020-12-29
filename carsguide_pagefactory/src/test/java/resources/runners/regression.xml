@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="testsuite" verbose="1">
+    <listeners>
+        <listener class-name="au.com.carsguide.customlistner.CustomListner"></listener>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+    </listeners>
+    <test name = "Regression Test">
+        <groups>
+            <run><include name="Regression"></include></run>
+        </groups>
+        <classes>
+            <class name="au.com.carsguide.testsuite.SearchCarsTest"></class>
+            <class name="au.com.carsguide.testsuite.UsedCarSearchTest"></class>
+        </classes>
+
+    </test>
+</suite>
